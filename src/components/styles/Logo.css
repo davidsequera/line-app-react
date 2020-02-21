@@ -1,5 +1,5 @@
 .App-logo{
-	font-size: 50px;
+	font-size: 60px;
 	width: 4em;
 	height: 4em;
 	margin: 0;
@@ -23,7 +23,7 @@
 	border-right: 1em solid transparent;
 	border-top: 0 solid transparent;
 	border-left: 1em solid transparent;
-	border-bottom: 1em solid #fff;
+	border-bottom: 1em solid var(--white-color);
 	top: 0;
 	right: calc(50% - 1em);
 }
@@ -31,7 +31,7 @@
 	border-right: 1.5em solid transparent;
 	border-top: 0 solid transparent;
 	border-left: 1.5em solid transparent;
-	border-bottom: 1.5em solid #fff;
+	border-bottom: 1.5em solid var(--white-color);
 	top: 0.5em;
 	right: calc(50% - 1.5em);
 }
@@ -39,20 +39,20 @@
 	border-right: 2em solid transparent;
 	border-top: 0 solid transparent;
 	border-left: 2em solid transparent;
-	border-bottom: 1.5em solid #fff;
+	border-bottom: 1.5em solid var(--white-color);
 	top: 1.5em;
 	right: 0;
 }
 .rectangle {
 	width: 1em; 
 	height: 0.5em; 
-	background: #fff;
+	background: var(--white-color);
 	top: 3em;
 }
 .triangle-bottom {
 	width: 0; 
 	height: 0; 
-	border-top: 0.5em solid #fff;
+	border-top: 0.5em solid var(--white-color);
 	border-left: 0.5em solid transparent;
 	border-right: 0.5em solid transparent; 
 	top: 3.5em;

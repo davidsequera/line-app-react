@@ -6,13 +6,13 @@ class Logo extends React.Component{
     render(){
         return(
 			<React.Fragment>
-				<section class="App-logo">
-								<div class="logo" alt="imagen portada">
-									<div class="triangle figure" id="triangle1"></div>
-									<div class="triangle figure" id="triangle2"></div>
-									<div class="triangle figure" id="triangle3"></div>
-									<div class="rectangle figure"></div>
-									<div class="triangle-bottom figure"></div>
+				<section className="App-logo">
+								<div className="logo" alt="imagen portada">
+									<div className="triangle figure" id="triangle1"></div>
+									<div className="triangle figure" id="triangle2"></div>
+									<div className="triangle figure" id="triangle3"></div>
+									<div className="rectangle figure"></div>
+									<div className="triangle-bottom figure"></div>
 								</div>
 							</section>
 			</React.Fragment>
