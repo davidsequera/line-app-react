@@ -1,11 +1,11 @@
 import React from 'react'
 
-class LogIn extends React.Component{
+class Help extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <div className="Page-container" id="LogIn">
-                    <h1 className="Page-title">LogIn</h1>
+                <div className="Page-container" id="Help">
+                    <h1 className="Page-title">Help</h1>
                     <div className="help">
                         
                     </div>
@@ -15,4 +15,4 @@ class LogIn extends React.Component{
     }
 }
 
-export default LogIn
+export default Help;

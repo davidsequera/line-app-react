@@ -9,11 +9,67 @@
   --d2-color:#03803D;
   --d3-color:#01401E;
   --white-color:#ffffff;
+  --Navbar-size:50px;
   }
 body{
   background-color: var(--Background-color);
   color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
+
+/* General Settings */
+
+.Layout-container{
+  display: block;
+  height: auto;
+  width: 100vw;
+}
+.Page-container{
+  padding: 20px 20px 60px 20px;
+  margin: 0;
+  /* display: flex; */
+  width: auto;
+}
+.App-title{
+  font-size: 72px;
+}
+a{
+  /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+  text-decoration: none;
+  color: var(--white-color);
+}
+.Page-title{
+  font-size: 50px;
+  margin: 0 0 34px 0;
+}
+
+/* General Settings */
+
+/* scrollbar style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  border: 1px solid var(--p2-color);
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: var(--white-color);  
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: var(light--color);  
+  }
+/* scrollbar style */
+
 @media screen and (min-width: 1024px) {
   
 }

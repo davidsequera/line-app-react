@@ -1,0 +1,28 @@
+.RestaurantTemplate_logo{
+    border-radius: 50%;
+    height: 54vw;
+    width: 54vw;
+}
+.RestaurantTemplate_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.RestaurantTemplate_reserveButton{
+    width: 296px;
+    height: 96px;
+    background-color: var(--Light-color);
+    color: var(--white-color);
+    font-size: 8vw;
+    font-weight: bold;
+    border: 5px solid #FFFFFF;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+.RestaurantTemplate_reservebutton:focus{
+    opacity: 1;
+    transition: 20ms ease;
+}

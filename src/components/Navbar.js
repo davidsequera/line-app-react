@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { MdHome, MdFavoriteBorder, MdPersonOutline } from 'react-icons/md'
+import { MdHome, MdFavorite, MdAccountCircle } from 'react-icons/md'
+import './styles/Navbar.css'
 
 const SIZE = '32px';
 
@@ -9,9 +10,9 @@ class Navbar extends React.Component{
         return(
             <React.Fragment>
                 <nav>
-                    <Link to='/explore'><MdHome size={SIZE} /></Link>
-                    <Link to='/favs'><MdFavoriteBorder size={SIZE} /></Link>
-                    <Link to='/user'><MdPersonOutline size={SIZE} /></Link>
+                    <Link className="NavButton" to='/explore'><MdHome size={SIZE} /></Link>
+                    <Link className="NavButton" to='/favs'><MdFavorite size={SIZE} /></Link>
+                    <Link className="NavButton" to='/user'><MdAccountCircle size={SIZE} /></Link>
                 </nav>
             </React.Fragment>
         )
