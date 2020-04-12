@@ -17,13 +17,11 @@ nav{
 }
 .NavButton{
     color: var(--Light-color);
-}
-.NavButton:hover{
     text-decoration: none;
+}
+.NavButton[aria-current] {
     color: var(--white-color);
 }
-
-
 
 /* link{
     transition: color .5s ease;

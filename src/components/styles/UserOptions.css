@@ -1,6 +1,7 @@
 .UserOptions_container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     /* background-color: darkgreen; */
 }
 .UserOptions_item{

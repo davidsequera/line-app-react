@@ -6,6 +6,20 @@ import './styles/Navbar.css'
 const SIZE = '32px';
 
 class Navbar extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            navbar: ''
+        }
+    }
+    componentDidMount(){
+        this.setState({
+            navbar: 'Home'
+        })
+    }
+    componentDidUpdate(){
+
+    }
     render(){
         return(
             <React.Fragment>

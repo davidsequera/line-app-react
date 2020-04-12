@@ -1,3 +1,4 @@
 #MyTickets{
-    background-color: var(--p2-color) ;
+    background-color: var(--p2-color);
+    min-height: calc(100vh - var(--Navbar-size));
 }

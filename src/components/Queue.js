@@ -2,7 +2,9 @@ import React from 'react'
 import './styles/Queue.css'
 
 class Queue extends React.Component{
+    
     render(){
+        const paquita = 'hola soy paquita'
         return(
             <React.Fragment>
                 <div className="Queue_container">
@@ -14,6 +16,7 @@ class Queue extends React.Component{
                             <h2 class="Queue_username">User Name</h2>
                             <p class="userinfo">Height</p>
                             <p class="user-timer">Mass</p>
+                            <h1>{paquita}</h1>
                     </div>
                     </div>
                 </div>
