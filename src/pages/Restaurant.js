@@ -1,5 +1,6 @@
 import React from 'react'
 import ResturantTemplate from '../components/RestaurantTemplate'
+import './styles/Restaurant.css'
 
 class Restaurant extends React.Component{
     render(){

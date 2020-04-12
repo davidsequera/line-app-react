@@ -26,9 +26,10 @@ function App() {
                 <Route exact path="/favs" component={Favorites}/>
                 <Route exact path="/user" component={User}/>
                 <Route exact path="/" component={Loading}/>
-                <Route exact path="/explore/places" component={Place}/>
-                <Route exact path="/explore/places/restaurant" component={Restaurant}/>
-                <Route exact path="/explore/places/restaurant/reserve" component={Reserve}/>
+                <Route exact path="/explore/:resturantId/places" component={Place}/>
+                {/* <Route exact path="/explore/places" component={Place}/> */}
+                <Route exact path="/explore/:resturantId/:placeId" component={Restaurant}/>
+                <Route exact path="/explore/resturantId/placesId/reserve" component={Reserve}/>
                 <Route exact path="/user/useredit" component={UserEdit}/>
                 <Route exact path="/user/mytickets" component={MyTickets}/>
                 <Route exact path="/user/appsettings" component={AppSettings}/>

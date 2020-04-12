@@ -1,11 +1,12 @@
 .RestaurantTemplate_logo{
     border-radius: 50%;
-    height: 54vw;
-    width: 54vw;
+    height: 300px;
+    width: 300px;
 }
 .RestaurantTemplate_container{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
 
@@ -16,7 +17,7 @@
     height: 96px;
     background-color: var(--Light-color);
     color: var(--white-color);
-    font-size: 8vw;
+    font-size: 2.5rem;
     font-weight: bold;
     border: 5px solid #FFFFFF;
     border-radius: 50px;
