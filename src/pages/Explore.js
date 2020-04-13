@@ -2,51 +2,30 @@ import React from 'react'
 import './styles/Explore.css'
 import RestaurantList from '../components/RestaurantList'
 
+const fakeApi = 'http://localhost:3001/restaurants'
+
 class Explore extends React.Component{
     constructor(props){
         super(props)
         this.state = {
+            loading: false,
+            error: null,
             data: [],
           };    
     }
     componentDidMount(){
-        // console.log(3)
-        this.timeoutId = setTimeout(() => {
-            this.setState({
-                data: [              {
-                    id: '2de30c42-9deb-40fc-a41f-05e62b5939a7',
-                    Name: 'Crepes & Waffles',
-                    imgUrl:
-                    'https://www.catalogodavipuntos.com/3660-tm_thickbox_default/bono-crepes-waffles-50000.jpg'
-                },
-                  {
-                    id: 'd00d3614-101a-44ca-b6c2-0be075aeed3d',
-                    Name: 'Wok',
-                    imgUrl:
-                    'https://www.parquelacolina.com/wp-content/uploads/2018/11/wok-logo.png'
-                },
-                  {
-                    id: '63c03386-33a2-4512-9ac1-354ad7bec5e9',
-                    Name: 'Andres Carne de res',
-                    imgUrl:
-                    'https://lh3.googleusercontent.com/proxy/t_ngOJhFbVckgahPUPBCmyQJWkSZpyit_X3joXu_VXCF_K2pKTTmehjd5cunrS1SF2kH_hZKeVQ6OKADVdPac00T31BEsV8dk9K4OzMdbRZvdkK-O5GEedpIcfT71IU'
-                },] 
-            })
-        }, 0);
+        this.fetchData()
     }
-    componentDidUpdate(preprops, prestate){
-        // console.log({
-        //     preprops: preprops, 
-        //     prestate: prestate})
-        // console.log({
-        //     props: this.props,
-        //     state: this.state})
-        
-    }
-    componentWillUnmount(){
-        // console.log('se desmonto')
-        clearTimeout(this.timeoutId)
-    }
+    fetchData = async () => {
+        this.setState({ loading: true, error: null });
+        try {
+            const response = await fetch(fakeApi)
+            const data = await response.json()
+            this.setState({loading:false, data: data });
+        } catch (error) {
+            this.setState({ loading: false, error: error });
+        }
+      };
     render(){
         return(
             <React.Fragment>

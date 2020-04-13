@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 class RestaurantList extends React.Component{
     render(){
+        console.log(this.props.restaurant)
         return(
             <React.Fragment>
                 <ul className="RestaurantList_container">

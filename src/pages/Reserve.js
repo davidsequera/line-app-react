@@ -9,7 +9,6 @@ class Reserve extends React.Component{
             <div className="Page-container" id="Reserve">
                 <h1 className="Page-title">Reserve</h1>
                 <div className="reserve">
-
                 <Queue/>
                 </div>
             </div>

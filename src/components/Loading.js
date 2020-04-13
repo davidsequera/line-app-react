@@ -3,13 +3,12 @@ import Logo from './Logo'
 import './styles/Loading.css'
 import { Link } from 'react-router-dom'
 
-class Loading extends React.Component{
-    render(){
+function Loading (){
         return(
             <React.Fragment>
                 <div className="Loading">
                     <div className="Loading-main">
-                        <h1>LineApp</h1>
+                        <h1 className="App-title">LineApp</h1>
                         <Link to='/explore'>
                         <Logo />
                         </Link>
@@ -19,7 +18,6 @@ class Loading extends React.Component{
             </React.Fragment>
         )
     }
-}
 
 export default Loading
 

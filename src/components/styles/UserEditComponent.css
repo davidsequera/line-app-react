@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 12px;
 }
 .UserEditComponent_User-logo{
     height: 150px;
@@ -13,18 +14,11 @@
     flex-shrink: 0;
 }
 .UserEditComponent_item{
-    /* border-radius: 10px; */
-    /* opacity: 0.35; */
--webkit-tap-highlight-color: rgb(58, 207, 21);
-font-size: 1rem;
-font-weight: 400;
-line-height: 1.5;
-color: #019446;
-/* text-align: center; */
-/* font-family: 'Lato', 'Helvetica Neue', sans-serif; */
-/* box-sizing: border-box; */
-/* -webkit-font-smoothing: antialiased; */
-/* margin-bottom: 1rem; */
+    -webkit-tap-highlight-color: rgb(58, 207, 21);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #019446;
 }
 .UserEditComponent_item label{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
