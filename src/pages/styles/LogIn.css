@@ -1,0 +1,7 @@
+#LogIn{
+    background-color: var(--p2-color);
+    height: 100vh;
+    position: absolute;
+    z-index: 1001;
+    margin: 0;
+}

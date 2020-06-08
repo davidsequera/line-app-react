@@ -7,7 +7,7 @@ class FavoritesList extends React.Component{
             <React.Fragment>
                 <div className="FavoritesList_container">
                     <div className="FavoritesList_item" id="fav-item-a1">
-                        <h1>hola</h1>
+                        <h1 style={{margin: 0}}>hola</h1>
                     </div>
                     <div className="FavoritesList_item" id="fav-item-a2">
                         

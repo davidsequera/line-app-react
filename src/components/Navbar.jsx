@@ -25,8 +25,8 @@ class Navbar extends React.Component{
             <React.Fragment>
                 <nav>
                     <Link className="NavButton" to='/'><MdHome size={SIZE} /></Link>
-                    <Link className="NavButton" to='/favs'><MdFavorite size={SIZE} /></Link>
-                    <Link className="NavButton" to='/user'><MdAccountCircle size={SIZE} /></Link>
+                    <Link className="NavButton" to='/favorites'><MdFavorite size={SIZE} /></Link>
+                    <Link className="NavButton" to='/account'><MdAccountCircle size={SIZE} /></Link>
                 </nav>
             </React.Fragment>
         )

@@ -1,13 +1,13 @@
 import React from 'react'
 import UserOptions from '../components/UserOptions'
 
-class User extends React.Component{
+class Account extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <div className="Page-container" id="User">
+                <div className="Page-container" id="Account">
                     <h1 className="Page-title">My Account</h1>
-                    <div className="user">
+                    <div className="account">
                         <UserOptions/>
                     </div>
                 </div>
@@ -16,4 +16,4 @@ class User extends React.Component{
     }
 }
 
-export default User
+export default Account

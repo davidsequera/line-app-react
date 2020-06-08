@@ -19,7 +19,7 @@ nav{
     color: var(--Light-color);
     text-decoration: none;
 }
-.NavButton[aria-current] {
+.NavButton:active {
     color: var(--white-color);
 }
 

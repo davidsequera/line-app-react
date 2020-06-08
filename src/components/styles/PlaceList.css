@@ -7,18 +7,31 @@
     margin: 12px 0;
     padding: 6px;
     display: flex;
-    border: 2px solid var(--p3-color) ;
+    border: 2px solid var(--p2-color) ;
     border-radius: 20px;
     text-align: left;
 }
 .PlaceList_item:hover{
     background-color: var(--p2-color) ;
-    border: var(--p2-color) ;
 }
 .PlaceList_item-name{
     font-size: 10vw;
     margin: 6px;
 }
 .PlaceList_item-address{
-    font-size: 18px;
+    font-size: 20px;
+    margin: 20px 6px;
+}
+@media screen and (min-width: 768px){
+    .PlaceList_item{
+        margin: 12px 50px;
+        padding: 6px;
+        display: block;
+        border: 2px solid var(--p3-color) ;
+        border-radius: 20px;
+        text-align: left;
+    }
+	.PlaceList_item-name{
+		font-size: 40px;
+	}
 }

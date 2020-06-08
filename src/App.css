@@ -1,13 +1,13 @@
 :root{
   --Background-color:#013318;
   --Light-color:#02D464;
+  --d3-color:#01401E;
   --p1-color:#014722;
+  --p4-color:#016E34;
+  --d2-color:#03803D;
   --p2-color:#028741;
   --p3-color:#019446;
-  --p4-color:#016E34;
   --d1-color:#04BF5B;
-  --d2-color:#03803D;
-  --d3-color:#01401E;
   --white-color:#ffffff;
   --Navbar-size:50px;
   --Page-padding: 0 20px  var(--Navbar-size) 20px;

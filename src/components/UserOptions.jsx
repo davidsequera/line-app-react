@@ -8,7 +8,7 @@ class UserOptions extends React.Component{
         return(
             <React.Fragment>
                 <div className="UserOptions_container">
-                    <Link to="/user/useredit" className="UserOptions_item" id="UserOptions_User-info">
+                    <Link to="/account/profile" className="UserOptions_item" id="UserOptions_User-info">
                         <MdAccountCircle className="UserOptions_User-logo"/>
                         {/* <img className="UserOptions_User-logo" src={MdAccountCircle} alt="User photo"/> */}
                         <div id="UserOptions_info-text">
@@ -16,17 +16,17 @@ class UserOptions extends React.Component{
                             <h1 className="UserOptions_info-text">Email</h1>
                         </div>
                     </Link>
-                    <Link to="/user/mytickets"  className="UserOptions_item" id="UserOptions_MyTickets">
+                    <Link to="/myTickets"  className="UserOptions_item" id="UserOptions_MyTickets">
                         <div className="UserOptions_text-container" id="My-Tickets-container">
                             <h1 className="UserOptions_item-text">My Tickets</h1>
                         </div>
                     </Link>
-                    <Link to="/user/appsettings" className="UserOptions_item" id="UserOptions_AppSetting">
+                    <Link to="/account/appsettings" className="UserOptions_item" id="UserOptions_AppSetting">
                         <div className="UserOptions_text-container" id="App-Setting-cotainer">
                             <h1 className="UserOptions_item-text">App Setting</h1>
                         </div>
                     </Link>
-                    <Link to="/user/Help" className="UserOptions_item" id="UserOptions_Help">
+                    <Link to="/account/help" className="UserOptions_item" id="UserOptions_Help">
                         <div className="UserOptions_text-container" id="Help-cotainer">
                             <h1 className="UserOptions_item-text">Help</h1>
                         </div>

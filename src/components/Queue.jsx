@@ -8,14 +8,14 @@ class Queue extends React.Component{
         return(
             <React.Fragment>
                 <div className="Queue_container">
-                    <div class="Queue_headline-container">
-                        <h2 class="Queue_headline">Queue</h2>
+                    <div className="Queue_headline-container">
+                        <h2 className="Queue_headline">Queue</h2>
                     </div>
-                    <div class="Queue_box">
-                        <div class="Queue_User-item" >
-                            <h2 class="Queue_username">User Name</h2>
-                            <p class="userinfo">Height</p>
-                            <p class="user-timer">Mass</p>
+                    <div className="Queue_box">
+                        <div className="Queue_User-item" >
+                            <h2 className="Queue_username">User Name</h2>
+                            <p className="userinfo">Height</p>
+                            <p className="user-timer">Mass</p>
                             <h1>{paquita}</h1>
                     </div>
                     </div>

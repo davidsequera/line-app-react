@@ -12,17 +12,13 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-icons": "^3.9.0",
-    "react-router-dom": "^5.1.2",
+    "react-icons": "^3.10.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.0"
   },
-  "devDependencies": {
-    "npm-run-all": "^4.1.5"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "npm-run-all -p client server",
-    "client": "react-scripts start",
-    "server": "json-server --port 3001 --watch server/RestaurantApi.json",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -41,5 +37,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "repositoryUrl": "git+https://github.com/davidsequera/line-app-react.git"
+  },
+  "bugs": {
+    "bugsUrl": "https://github.com/davidsequera/line-app-react/issues"
+  },
+  "repositoryHomepage": "https://github.com/davidsequera/linepp-react#readme"
 }

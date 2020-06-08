@@ -1,5 +1,6 @@
 import React from 'react'
-import UserEditComponent from '../components/UserEditComponent'
+import UserLogInComponent from '../components/UserLogInComponent'
+import './styles/LogIn.css'
 
 class LogIn extends React.Component{
     render(){
@@ -8,7 +9,7 @@ class LogIn extends React.Component{
                 <div className="Page-container" id="LogIn">
                     <h1 className="Page-title">LogIn</h1>
                     <div className="login">
-                        <UserEditComponent/>
+                        <UserLogInComponent/>
                     </div>
                 </div>
             </React.Fragment>
