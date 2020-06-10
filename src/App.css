@@ -1,6 +1,7 @@
 :root{
   --Background-color:#013318;
   --Light-color:#02D464;
+  --Light4-color:rgba(2, 212, 100, 0.4);
   --d3-color:#01401E;
   --p1-color:#014722;
   --p4-color:#016E34;
@@ -19,7 +20,6 @@ body{
   justify-content: center;
   align-items: center;
 }
-
 
 
 /* General Settings */
@@ -52,6 +52,12 @@ a{
   /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
   text-decoration: none;
   color: var(--white-color);
+}
+ul{
+  list-style: none;
+}
+h2{
+  font-size: 1.6rem;
 }
 /* General Details */
 

@@ -19,8 +19,9 @@ nav{
     color: var(--Light-color);
     text-decoration: none;
 }
-.NavButton:active {
+.NavActive{
     color: var(--white-color);
+    text-decoration: none;
 }
 
 /* link{

@@ -2,8 +2,7 @@
     background-color: var(--p2-color);
 }
 .reserve{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

@@ -1,5 +1,5 @@
 .RestaurantList_container{
-    height: 60vh;
+    height: 58vh;
     background-color: var(--p4-color);
     padding: 10px 10px;
     margin: 10px;
@@ -12,11 +12,11 @@
     padding: 6px;
     align-items: center;
     color: var(--white-color);
-    background-color: var(--p2-color);
-    border: 3px solid var(--d1-color);
-    border-radius: 15px;
-    /* box-shadow: 2.5px 2.5px 5px rgba(125, 125, 125, 0.5); */
+    background-color: var(--Light4-color);
+    border-radius: 1px;
+    box-shadow: 0px 3px 6px #00000029;
 }
+
 .RestaurantList_item:hover{
    background-color: var(--Light-color);
 }
@@ -33,5 +33,10 @@
     .RestaurantList_container{
         width: 600px;
         align-self:center;
+    }
+}
+@media screen and (min-height: 700px) {
+    .RestaurantList_container{
+        height: 66vh
     }
 }

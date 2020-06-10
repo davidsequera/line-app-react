@@ -1,0 +1,22 @@
+.UserTimer_container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 65vw;
+    height: 15vh;
+    margin: 15px 0 0;
+    background: var(--Background-color);
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.UserTimer_time-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.UserTimer_time{
+    font-size: 3rem;
+    margin: 10px 10px;
+}

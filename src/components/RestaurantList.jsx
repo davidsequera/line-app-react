@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 
 class RestaurantList extends React.Component{
     render(){
-        console.log(this.props.restaurant)
+        const restaurant = this.props.restaurant.restaurants 
         return(
             <React.Fragment>
                 <ul className="RestaurantList_container">
-                    {this.props.restaurant.map((restaurant) => <li key={restaurant.id}>
-                                <Link to={`explore/${restaurant.id}/places`}className="RestaurantList_item">
-                                    <img className="RestaurantList_logo" src={restaurant.imgUrl} alt={`logo ${restaurant.Name}`}></img>
-                                    <h2 className="RestaurantList_Name">{restaurant.Name}</h2>
+                    {restaurant.map((restaurant) => <li key={restaurant.id}>
+                                <Link to={`explore/${restaurant.id}`}className="RestaurantList_item">
+                                    <img className="RestaurantList_logo" src={restaurant.logo} alt={`logo ${restaurant.name}`}></img>
+                                    <h2 className="RestaurantList_Name">{restaurant.name}</h2>
                                 </Link>
                             </li>
                     )}

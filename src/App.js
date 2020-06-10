@@ -26,7 +26,7 @@ function App() {
                 <Route exact path="/" component={Explore}/>
                 <Route exact path="/favorites" component={Favorites}/>
                 <Route exact path="/account" component={Account}/>
-                <Route exact path="/explore/:resturantId/places" component={Place}/>
+                <Route exact path="/explore/:resturantId" component={Place}/>
                 {/* <Route exact path="/explore/places" component={Place}/> */}
                 <Route exact path="/explore/:resturantId/:placeId" component={Restaurant}/>
                 <Route exact path="/myTickets/ticketId" component={Reserve}/>

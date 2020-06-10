@@ -9,24 +9,16 @@ class Navbar extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            navbar: ''
+            navbar: undefined
         }
-    }
-    componentDidMount(){
-        this.setState({
-            navbar: 'Home'
-        })
-    }
-    componentDidUpdate(){
-
     }
     render(){
         return(
             <React.Fragment>
                 <nav>
-                    <Link className="NavButton" to='/'><MdHome size={SIZE} /></Link>
-                    <Link className="NavButton" to='/favorites'><MdFavorite size={SIZE} /></Link>
-                    <Link className="NavButton" to='/account'><MdAccountCircle size={SIZE} /></Link>
+                    <Link className={this.state.navbar === 'Home' ? "NavActive" : "NavButton"} onClick={ () => this.setState({navbar :'Home'})} to='/'><MdHome size={SIZE} /></Link>
+                    <Link className={this.state.navbar === 'Favorites' ? "NavActive" : "NavButton"} onClick={ () => this.setState({navbar:'Favorites'})} to='/favorites'><MdFavorite size={SIZE} /></Link>
+                    <Link className={this.state.navbar === 'Account' ? "NavActive" : "NavButton"} onClick={ () => this.setState({navbar: 'Account'})} to='/account'><MdAccountCircle size={SIZE} /></Link>
                 </nav>
             </React.Fragment>
         )
