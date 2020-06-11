@@ -1,4 +1,8 @@
 #Restaurant{
-    justify-content: center;
     align-items: center;
+}
+@media screen and (min-height: 768px){
+    #Restaurant{
+        justify-content: center;
+    }
 }

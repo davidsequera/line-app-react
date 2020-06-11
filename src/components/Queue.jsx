@@ -5,7 +5,6 @@ class Queue extends React.Component{
     
     render(){
         return(
-            <React.Fragment>
                 <div className="Queue_container">
                     <div className="Queue_headline-container">
                         <h2 className="Queue_headline">Queue</h2>
@@ -17,7 +16,6 @@ class Queue extends React.Component{
                             </li>)}
                     </ul>
                 </div>
-            </React.Fragment>
         )
     }
 }

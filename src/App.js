@@ -8,7 +8,7 @@ import LogIn from './pages/LogIn';
 import Layout from './components/Layout';
 import NotFound from './components/NotFound';
 import Account from './pages/Account';
-import Place from './pages/Place';
+import Locations from './pages/Locations';
 import Restaurant from './pages/Restaurant';
 import Reserve from './pages/Reserve';
 import Profile from './pages/Profile';
@@ -26,8 +26,8 @@ function App() {
                 <Route exact path="/" component={Explore}/>
                 <Route exact path="/favorites" component={Favorites}/>
                 <Route exact path="/account" component={Account}/>
-                <Route exact path="/explore/:resturantId" component={Place}/>
-                {/* <Route exact path="/explore/places" component={Place}/> */}
+                <Route exact path="/explore/:resturantId" component={Locations}/>
+                {/* <Route exact path="/explore/places" component={Locations}/> */}
                 <Route exact path="/explore/:resturantId/:placeId" component={Restaurant}/>
                 <Route exact path="/myTickets/ticketId" component={Reserve}/>
                 <Route exact path="/account/profile" component={Profile}/>

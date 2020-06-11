@@ -34,7 +34,7 @@ class Reserve extends React.Component{
             ]
         }
         this.state = {date: new Date()}
-        this.userTime = new Date("June 9, 2020 23:30:00").getTime()
+        this.userTime = new Date("June 10, 2020 21:00:00").getTime()
         this.elReal = 'Wait'
     }
     componentDidMount(){
@@ -58,7 +58,6 @@ class Reserve extends React.Component{
     }
     render(){
         return(
-            <React.Fragment>
             <div className="Page-container" id="Reserve">
                 <h1 className="Page-title">Reserve</h1>
                 <div className="reserve">
@@ -70,8 +69,6 @@ class Reserve extends React.Component{
                 />
                 </div>
             </div>
-            
-            </React.Fragment>
         )
     }
 }

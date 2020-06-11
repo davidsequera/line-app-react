@@ -5,7 +5,6 @@ import './styles/PlaceList.css'
 class PlaceList extends React.Component{
     render(){
         return(
-            <React.Fragment>
                 <div className="PlaceList_container">
                     {this.props.place.map((place) =>{
                         return(
@@ -18,7 +17,6 @@ class PlaceList extends React.Component{
                         )
                     })}
                 </div>
-            </React.Fragment>
         )
     }
 }

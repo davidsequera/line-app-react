@@ -42,7 +42,6 @@ class Place extends React.Component{
     }
     render(){
         return(
-            <React.Fragment>
                 <div className="Page-container" id="Places">
                     <h1 className="Page-title">{'Crepes & Waffles'}</h1>
                     <div className="places">
@@ -51,7 +50,6 @@ class Place extends React.Component{
                         />
                     </div>
                 </div>
-            </React.Fragment>
         )
     }
 }

@@ -1,18 +1,26 @@
-.UserLogInComponent_form{
+.ProfileComponent_form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 12px;
 }
-.UserLogInComponent_item{
+.ProfileComponent_User-logo{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+    flex-shrink: 0;
+}
+.ProfileComponent_item{
     -webkit-tap-highlight-color: rgb(58, 207, 21);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--p3-color);
+    color: #019446;
 }
-.UserLogInComponent_item label{
+.ProfileComponent_item label{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-size: 2rem;
     font-weight: bold;
@@ -25,7 +33,7 @@
     margin-bottom: 0.5rem;
 }
 
-.UserLogInComponent_item input{
+.ProfileComponent_item input{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -34,7 +42,7 @@
     display: block;
     width: 100%;
     /* height: calc(1.5em + 0.75rem + 2px); */
-    padding: 0.375rem 0.75rem;
+    padding: 0.375rem 0.75rem;  
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.5;
@@ -46,33 +54,31 @@
     /* border-radius: 0.25rem; */
     /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
 }
-.UserLogInComponent_item input, button:focus{
+.ProfileComponent_item input, button:focus{
     text-decoration: none;
     outline: none;
 }
-.UserLogInComponent_button{
-    background: var(--Light-color) 0% 0% no-repeat padding-box;
-    border: 5px solid var(--white-color);
-    border-radius: 10px;
-    opacity: 1;
-    margin-top: 150px;
-    max-width: 335px;
-    max-height: 81px;
+#ProfileComponent_button{
+    border-radius: 25px;
+    margin: 40px 0 20px 0;
+    width: 85vw;
+    height: 12vh;
     font-size: 3rem;
-    font-weight: bold;
-    color: var(--white-color);
-    opacity: 0.9;
 }
-.UserLogInComponent_button:focus{
-    opacity: 1;
-    transition: 2ms ease;
-}
-/* #UserLogInComponent_Username{
+
+/* #ProfileComponent_Username{
 
 }
-#UserLogInComponent_PublicName{
+#ProfileComponent_PublicName{
 
 }
-#UserLogInComponent_Email{
+#ProfileComponent_Email{
 
 } */
+
+@media screen and (min-width: 768px){
+    #ProfileComponent_button{
+        width: 335px;
+        height: 81px;
+    }
+}

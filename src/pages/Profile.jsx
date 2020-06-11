@@ -1,16 +1,14 @@
 import React from 'react'
-import UserEditComponent from '../components/UserEditComponent'
+import ProfileComponent from '../components/ProfileComponent'
 
 class UserEdit extends React.Component{
     render(){
         return(
-            <React.Fragment>
             <div className="Page-container" id="UserEdit">
                 <div className="useredit">
-                    <UserEditComponent/>
+                    <ProfileComponent/>
                 </div>
             </div>
-            </React.Fragment>
         )
     }
 }

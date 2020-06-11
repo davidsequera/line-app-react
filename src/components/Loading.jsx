@@ -4,7 +4,6 @@ import './styles/Loading.css'
 
 function Loading (){
         return(
-            <React.Fragment>
                 <div className="Loading">
                     <div className="Loading-main">
                         <h1 className="App-title">LineApp</h1>
@@ -14,7 +13,6 @@ function Loading (){
                         <h5 style={{fontStyle:"italic"}}>Stay tune for updates</h5>
                     </div>
                 </div>
-            </React.Fragment>
         )
     }
 

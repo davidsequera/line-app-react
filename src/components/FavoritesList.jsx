@@ -1,40 +1,38 @@
 import React from 'react'
 import './styles/FavoritesList.css'
+import { Link } from 'react-router-dom';
+import { MdAdd } from 'react-icons/md'
+
 
 class FavoritesList extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <div className="FavoritesList_container">
-                    <div className="FavoritesList_item" id="fav-item-a1">
-                        <h1 style={{margin: 0}}>hola</h1>
-                    </div>
-                    <div className="FavoritesList_item" id="fav-item-a2">
-                        
-                    </div>
-                    <div className="FavoritesList_item" id="fav-item-a3">
-                        
-                    </div>
-                    <div className="FavoritesList_item" id="fav-item-b1">
-                        
-                    </div>
-                    <div className="FavoritesList_item" id="fav-item-b2">
-                        
-                    </div>
-                    <div className="FavoritesList_item" id="fav-item-b3">
-                        
-                    </div>
-                    <div className="FavoritesList_item" id="fav-item-c1">
-                        
-                    </div>
-                    <div className="FavoritesList_item" id="fav-item-c2">
-                        
-                    </div>
-                    <div className="FavoritesList_item" id="fav-item-c3">
-                        
-                    </div>
-                </div>
-            </React.Fragment>
+
+                <ul className="FavoritesList_container">
+                {this.props.favs.restaurants.map((restaurant) => <li key={restaurant.id}>
+                        <Link to={`explore/${restaurant.id}`} className="FavoritesList_item">
+                            <img className="RestaurantList_logo" src={restaurant.logo} alt={`logo ${restaurant.name}`}></img>
+                        </Link>
+                    </li>
+                )}
+                <li className="FavoritesList_item">
+
+                </li>
+                <li className="FavoritesList_item">
+
+                </li>
+                <li className="FavoritesList_item">
+
+                </li>
+                <li className="FavoritesList_item">
+
+                </li>
+                <li className="FavoritesList_item">
+                    <Link className='dd' onClick={ () => this.setState({navbar :'Home'})} to='/'><MdAdd size='60px' /></Link>
+                </li>
+                </ul>
+                </React.Fragment>
         )
     }
 }

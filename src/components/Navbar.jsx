@@ -14,13 +14,11 @@ class Navbar extends React.Component{
     }
     render(){
         return(
-            <React.Fragment>
                 <nav>
                     <Link className={this.state.navbar === 'Home' ? "NavActive" : "NavButton"} onClick={ () => this.setState({navbar :'Home'})} to='/'><MdHome size={SIZE} /></Link>
                     <Link className={this.state.navbar === 'Favorites' ? "NavActive" : "NavButton"} onClick={ () => this.setState({navbar:'Favorites'})} to='/favorites'><MdFavorite size={SIZE} /></Link>
                     <Link className={this.state.navbar === 'Account' ? "NavActive" : "NavButton"} onClick={ () => this.setState({navbar: 'Account'})} to='/account'><MdAccountCircle size={SIZE} /></Link>
                 </nav>
-            </React.Fragment>
         )
     }
 }

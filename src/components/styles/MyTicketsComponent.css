@@ -1,0 +1,19 @@
+.MyTicketsComponent_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1px;
+    margin: 20px 10px;
+    padding: 12px;
+
+}
+.MyTicketsComponent_Actual-item{
+    background-color: var(--Light4-color);
+}
+.MyTicketsComponent_History-item{
+    background-color: var(--p1-color);
+}
+.MyTicketsComponent_text{
+    font-size: 1.35rem;
+    margin: 5px 2px;
+}

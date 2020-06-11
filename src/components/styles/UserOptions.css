@@ -3,17 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: darkgreen; */
 }
 .UserOptions_item{
     border-radius: 18px;
     display: flex;
-    /* opacity: 1; */
-    /* position: absolute; */
-    background: #019446 0% 0% no-repeat padding-box;
+    background: var(--Light4-color) 0% 0% no-repeat padding-box;
     justify-content: center;
     align-items: center;
     margin: 15px;
+    width: 85vw;
+    height: 12vh;
 }
 .UserOptions_text-container{
     justify-content: center;
@@ -22,43 +21,50 @@
 }
 .UserOptions_item-text{
     opacity: 1;
-    font-size: 50px;
+    font-size: 2.8rem;
     margin: 0;
     text-align: center;
 }
-.UserOptions_User-logo{
-    height: 80px;
-    width: 80px;
+#UserOptions_Profile-logo{
+    height: 20vw;
+    width: 20vw;
     object-fit: cover;
     border-radius: 50%;
     margin: 10px;
     flex-shrink: 0;
 }
-#UserOptions_User-info{
+#UserOptions_Profile{
     display: flex;
     border-radius: 50px;
     /* opacity: 0.2; */
-    top: 165px;
-    left: 30px;
-    width: 315px;
-    height: 169px;
+    width: 85vw;
+    height: 20vh;
+}
+.UserOptions_Profile-text{
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;    
 }
 #UserOptions_MyTickets{
     background-color: var(--Light-color);
-    top: 372px;
-    left: 30px;
-    width: 315px;
-    height: 125px;
 }
-#UserOptions_AppSetting{
-    top: 534px;
-    left: 30px;
-    width: 315px;
-    height: 89px;
-}
-#UserOptions_Help{
-    top: 648px;
-    left: 30px;
-    width: 315px;
-    height: 89px;
+
+
+@media screen and (min-width: 768px){
+    .UserOptions_User-logo{
+        height: 80px;
+        width: 80px;
+    }
+    .UserOptions_item{
+        width: 400px;
+        height: 80px;
+    }
+    #UserOptions_Profile{
+        width: 400px;
+        height: 180px;
+    }
+    #UserOptions_Profile-logo{
+        height: 130px;
+        width: 130px;
+    }
 }

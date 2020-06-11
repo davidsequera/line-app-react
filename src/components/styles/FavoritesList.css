@@ -1,5 +1,5 @@
 .FavoritesList_item{
-    background: #04BF5B;
+    background: var(--d1-color);
     border: 5px solid var(--white-color);
     border-radius: 50%;
     opacity: 1; 

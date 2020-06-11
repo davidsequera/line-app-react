@@ -7,7 +7,6 @@ class RestaurantList extends React.Component{
     render(){
         const restaurant = this.props.restaurant.restaurants 
         return(
-            <React.Fragment>
                 <ul className="RestaurantList_container">
                     {restaurant.map((restaurant) => <li key={restaurant.id}>
                                 <Link to={`explore/${restaurant.id}`}className="RestaurantList_item">
@@ -17,7 +16,6 @@ class RestaurantList extends React.Component{
                             </li>
                     )}
                 </ul>
-            </React.Fragment>
         )
     }
 }

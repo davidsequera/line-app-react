@@ -4,7 +4,6 @@ import './styles/UserLogInComponent.css'
 class UserLogInComponent extends React.Component{
     render(){
         return(
-            <React.Fragment>
                 <div className="UserLogInComponent_container">
                     <form className="UserLogInComponent_form" action="">
                     <div className="UserLogInComponent_item" id="UserLogInComponent_Email">
@@ -32,7 +31,6 @@ class UserLogInComponent extends React.Component{
                     className="UserLogInComponent_button">LogIn</button>
                     </form>
                 </div>
-            </React.Fragment>
         )
     }
 }

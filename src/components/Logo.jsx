@@ -5,7 +5,6 @@ import './styles/Logo.css'
 class Logo extends React.Component{
     render(){
         return(
-			<React.Fragment>
 				<section className="App-logo">
 								<div className="logo" alt="imagen portada">
 									<div className="triangle figure" id="triangle1"></div>
@@ -15,7 +14,6 @@ class Logo extends React.Component{
 									<div className="triangle-bottom figure"></div>
 								</div>
 							</section>
-			</React.Fragment>
         )
     }
 }

@@ -6,14 +6,13 @@ import {MdAccountCircle} from 'react-icons/md'
 class UserOptions extends React.Component{
     render(){
         return(
-            <React.Fragment>
                 <div className="UserOptions_container">
-                    <Link to="/account/profile" className="UserOptions_item" id="UserOptions_User-info">
-                        <MdAccountCircle className="UserOptions_User-logo"/>
+                    <Link to="/account/profile" className="UserOptions_item" id="UserOptions_Profile">
+                        <MdAccountCircle id="UserOptions_Profile-logo"/>
                         {/* <img className="UserOptions_User-logo" src={MdAccountCircle} alt="User photo"/> */}
-                        <div id="UserOptions_info-text">
-                            <h1 className="UserOptions_info-text">Public Name</h1>
-                            <h1 className="UserOptions_info-text">Email</h1>
+                        <div id="UserOptions_Profile-text-container">
+                            <h1 className="UserOptions_Profile-text">Public Name</h1>
+                            <h1 className="UserOptions_Profile-text">Email</h1>
                         </div>
                     </Link>
                     <Link to="/myTickets"  className="UserOptions_item" id="UserOptions_MyTickets">
@@ -32,7 +31,6 @@ class UserOptions extends React.Component{
                         </div>
                     </Link>
                 </div>
-            </React.Fragment>
         )
     }
 }

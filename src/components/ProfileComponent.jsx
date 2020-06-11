@@ -1,15 +1,14 @@
 import React from 'react'
-import './styles/UserEditComponent.css'
+import './styles/ProfileComponent.css'
 import { MdAccountCircle } from 'react-icons/md';
 
-class UserEditComponent extends React.Component{
+class ProfileComponent extends React.Component{
     render(){
         return(
-            <React.Fragment>
-                <div className="UserEditComponent_container">
-                    <form className="UserEditComponent_form" action="">
-                    <MdAccountCircle className="UserEditComponent_User-logo"/>
-                    <div className="UserEditComponent_item" id="UserEditComponent_Username">
+                <div className="ProfileComponent_container">
+                    <form className="ProfileComponent_form" action="">
+                    <MdAccountCircle className="ProfileComponent_User-logo"/>
+                    <div className="ProfileComponent_item" id="ProfileComponent_Username">
                         <label htmlFor="">Username</label>
                         <input
                         // onChange={this.props.onChange}
@@ -19,7 +18,7 @@ class UserEditComponent extends React.Component{
                         // value={this.props.formValues.jobTitle}
                         />
                     </div>
-                    <div className="UserEditComponent_item" id="UserEditComponent_PublicName">
+                    <div className="ProfileComponent_item" id="ProfileComponent_PublicName">
                         <label htmlFor="">Public Name</label>
                         <input
                         // onChange={this.props.onChange}
@@ -29,7 +28,7 @@ class UserEditComponent extends React.Component{
                         // value={this.props.formValues.jobTitle}
                         />
                     </div>
-                    <div className="UserEditComponent_item" id="UserEditComponent_Email">
+                    <div className="ProfileComponent_item" id="ProfileComponent_Email">
                         <label htmlFor="">Email</label>
                         <input
                         // onChange={this.props.onChange}
@@ -41,12 +40,11 @@ class UserEditComponent extends React.Component{
                     </div>
                     <button 
                     // onClick={this.props.consoleprinter} 
-                    className="UserEditComponent_button">Save</button>
+                    className="button" id="ProfileComponent_button">Save</button>
                     </form>
                 </div>
-            </React.Fragment>
         )
     }
 }
 
-export default UserEditComponent;
+export default ProfileComponent;

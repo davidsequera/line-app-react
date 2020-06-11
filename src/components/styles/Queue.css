@@ -26,13 +26,12 @@
     height: auto;
     display: flex;
     background: var(--Background-color);
-    color: white;
 }
 .Queue_headline{
     margin: 10px 10px;
 }
 .Queue_box{
-    height: calc(100vh - 300px);
+    height: calc(100vh - 430px);
     /* height: 580px; */
     padding: 10px 10px;
     overflow: auto;
